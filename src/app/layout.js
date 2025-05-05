@@ -40,7 +40,7 @@ export default function RootLayout({ children }) {
 
         {children}
         <nav>
-        <ul className="flex flex-row justify-center gap-8 mb-4">
+        <ul className="flex flex-row justify-center gap-8 mb-4 mt-4">
             <li className=' hover:text-hd-color'>
               <Link href="/"> Home </Link>
             </li>
