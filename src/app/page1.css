@@ -1,9 +1,6 @@
 @import 'tailwindcss';
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
 
-.header {
-    font-family: 'Amatic SC', cursive;
-}
+
 @layer components {
     @keyframes left-to-right {
         0% {
@@ -40,7 +37,7 @@
         animation: right-to-left 1.5s ease-in-out forwards;
     }
 
-    @keyframes appear-from-left {
+    @keyframes appear {
         0% {
             transform: scale(0);
             opacity: 0;
@@ -55,22 +52,28 @@
        
     }
     .image2 {
-        animation: appear-from-left 3s ease-in-out forwards;
+        animation: appear 3s ease-in-out forwards;
+        animation-timeline: view();
+        animation-range: entry 0;
+    }
+    .dress2 {
+        animation: appear 3s ease-in-out forwards;
         animation-timeline: view();
         animation-range: entry 0;
     }
 
-    @keyframes bouncing {
+    @keyframes scale-up {
         0% {
-            transform: translateY(0);
-        }
-        50% {
-            transform: translateY(-20px);
+            transform: scale(1);
         }
         100% {
-            transform: translateY(0);
+            transform: scale(1.2);
         }
+
     }
 
+    .visit:hover {
+        animation: scale-up 0.5s ease-in-out forwards;
+    }
 
 }
