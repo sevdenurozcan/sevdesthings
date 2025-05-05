@@ -1,0 +1,45 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+
+@theme {
+  --color-bg-color: white;
+  --color-hd-bg-color: #dccac8;
+  --color-base-color: #fbf7f4;
+  --color-hd-color: #857172;
+  --color-border-color: #a88d89;
+  --font-hd-font: "Amatic SC", sans-serif;
+  /* --font-hd-font: "Cinzel", serif; */
+
+}
+
+@layer components {
+
+}
+
+/* 
+:root {
+  --background: #af928e;
+  --foreground: #dccac8;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+
+}
+ */
