@@ -38,8 +38,8 @@ export default function RootLayout({ children }) {
             
         
           </nav>
-           <nav className=' text-lg h-[50px] bg-hd-bg-color text-white relative mr-18'>
-            <ul className="flex flex-row justify-between gap-4 ">
+           <div>
+            <ul className="flex flex-row justify-between gap-4  text-lg h-[50px] bg-hd-bg-color text-white relative mr-18">
               <li className=' hover:text-hd-color underline'>
                 <Link href="/"> Home </Link>
               </li>
@@ -53,7 +53,7 @@ export default function RootLayout({ children }) {
                 <Link href="/blog"> Blog </Link>
               </li>
             </ul>
-          </nav>
+          </div>
         </div>
   
 
