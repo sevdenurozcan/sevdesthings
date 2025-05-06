@@ -20,7 +20,9 @@ export default function RootLayout({ children }) {
     <html lang="en" className={quicksand.className}>
       
       <body className="bg-bg-color ">
-                 
+
+
+        <div className="flex flex-row justify-between bg-hd-bg-color">
           <nav className="bg-hd-bg-color ">
             <ul className="flex flex-row flex-start gap-2 text-white">
               <li>
@@ -36,25 +38,44 @@ export default function RootLayout({ children }) {
             
         
           </nav>
+           <nav className=' text-lg h-[50px] bg-hd-bg-color text-white relative mr-18'>
+            <ul className="flex flex-row justify-between gap-4 ">
+              <li className=' hover:text-hd-color underline'>
+                <Link href="/"> Home </Link>
+              </li>
+              <li className=' hover:text-hd-color underline'>
+                <Link href="/patterns"> Patterns </Link>
+              </li>
+              <li className=' hover:text-hd-color underline'>
+                <Link href="/stores"> Stores </Link>
+              </li>
+              <li className=' hover:text-hd-color underline'>
+                <Link href="/blog"> Blog </Link>
+              </li>
+            </ul>
+          </nav>
+        </div>
   
 
         {children}
         <nav>
         <ul className="flex flex-row justify-center gap-8 mb-4 mt-4">
-            <li className=' hover:text-hd-color'>
+            <li className=' text-hd-color hover:text-hd-bg-color'>
               <Link href="/"> Home </Link>
             </li>
-            <li className=' hover:text-hd-color'>
+            <li className=' text-hd-color  hover:text-hd-bg-color'>
               <Link href="/patterns"> Patterns </Link>
             </li>
-            <li className=' hover:text-hd-color'>
+            <li className=' text-hd-color  hover:text-hd-bg-color'>
               <Link href="/stores"> Stores </Link>
             </li>
-            <li className=' hover:text-hd-color'>
+            <li className=' text-hd-color  hover:text-hd-bg-color'>
               <Link href="/blog"> Blog </Link>
             </li>
           </ul>
         </nav>
+
+        
 
         <footer className='text-center text-hd-color font-extralight text-sm mb-1'>
         © 2025 Sevde Nur Özcan. All rights reserved.

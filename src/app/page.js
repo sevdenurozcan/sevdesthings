@@ -19,22 +19,7 @@ export default function Home() {
       <div className="bg-border-color absolute left-[510px] w-[500px] h-0.5 hdbr"></div>
       <div className="font-hd-font text-6xl font-light pt-2 pb-8 text-center text-hd-color bg-gradient-to-b from-hd-bg-color from-75% to-transparent top-8 z-100 header" id="header">
 
-        <nav className='flex flex-col justify-end items-end text-lg absolute right-5 top-1 text-white'>
-          <ul>
-            <li className='text-end hover:text-hd-color'>
-              <Link href="/"> Home </Link>
-            </li>
-            <li className='text-end hover:text-hd-color'>
-              <Link href="/patterns"> Patterns </Link>
-            </li>
-            <li className='text-end hover:text-hd-color'>
-              <Link href="/stores"> Stores </Link>
-            </li>
-            <li className='text-end hover:text-hd-color'>
-              <Link href="/blog"> Blog </Link>
-            </li>
-          </ul>
-        </nav>
+       
         <h1 className='mb-1'> SEVDESTHINGS </h1>
         <div className="bg-border-color absolute left-[510px] w-[500px] h-0.5 hdbr"></div>
         <h2 className="text-2xl pt-2 font-extralight"> Handmade Clothing </h2>
@@ -149,7 +134,7 @@ export default function Home() {
             I made this dress by both knitting and crocheting.
           </p>
           <p>
-            I used this beautiful green color yarn by Madame Cotton.
+            I used this beautiful green yarn by Madame Cotton.
           </p>
           <p>
             This is definitely one of my favourite pieces.
