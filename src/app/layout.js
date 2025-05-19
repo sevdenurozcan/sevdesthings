@@ -1,3 +1,4 @@
+
 import Link from "next/link";
 import "./globals.css";
 
@@ -6,9 +7,8 @@ import { FaInstagram } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
 import { FaPhone } from "react-icons/fa6";
 
-import Cat from "./components/cat/Cat";
-
 import {Quicksand} from 'next/font/google';
+import Nav from "./components/nav/Nav";
 export const quicksand = Quicksand({ subsets: ['latin'], weight: ['400'] });
 
 export const metadata = {
@@ -17,6 +17,8 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+
+
   return (
     <html lang="en" className={quicksand.className}>
       
@@ -38,23 +40,7 @@ export default function RootLayout({ children }) {
             
         
           </nav>
-           <div className="w-full">
-            <ul className="flex flex-row justify-end xl:gap-4  text-lg h-[50px] bg-hd-bg-color text-white relative pr-16
-           max-sm:gap-2 max-sm:text-sm max-sm:justify-end max-sm:w-full max-sm:pr-4 max-sm:pt-1.5">
-              <li className=' hover:text-hd-color underline'>
-                <Link href="/"> Home </Link>
-              </li>
-              <li className=' hover:text-hd-color underline'>
-                <Link href="/patterns"> Patterns </Link>
-              </li>
-              <li className=' hover:text-hd-color underline'>
-                <Link href="/stores"> Stores </Link>
-              </li>
-              <li className=' hover:text-hd-color underline'>
-                <Link href="/blog"> Blog </Link>
-              </li>
-            </ul>
-          </div>
+           <Nav/>
         </div>
   
 
